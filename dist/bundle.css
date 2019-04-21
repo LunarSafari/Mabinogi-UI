@@ -1,0 +1,149 @@
+#dialogue {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  margin-left: -472px; }
+
+div.diary {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -128px;
+  margin-left: 48px; }
+  div.diary .keyword {
+    border: 1px solid black;
+    border-radius: 2px;
+    padding: 2px 2px 0;
+    color: blue;
+    font-size: 12px; }
+    div.diary .keyword:hover {
+      box-shadow: 0 0 0px 1px #000;
+      cursor: url(pointer.cur) 0 0, pointer; }
+    div.diary .keyword:active {
+      background: black;
+      color: yellow; }
+  div.diary .title {
+    display: inline-block;
+    text-align: center;
+    width: 100%; }
+  div.diary .left-side, div.diary .right-side {
+    top: 9px;
+    position: absolute;
+    width: 140px;
+    height: 220px;
+    color: black;
+    line-height: 16px; }
+  div.diary .left-side {
+    cursor: url(left_page.cur) 0 0, default;
+    left: 20px; }
+  div.diary .right-side {
+    cursor: url(right_page.cur) 0 0, default;
+    left: 185px; }
+  div.diary .page-number {
+    color: black;
+    position: absolute;
+    right: 192px;
+    bottom: 20px;
+    font-family: monospace; }
+
+html {
+  height: 100%; }
+
+body {
+  font-family: Simsun;
+  height: 100%;
+  margin: 0;
+  cursor: url(default.cur) 0 0, default;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  background: #000; }
+
+div.dialogue {
+  border-width: 16px;
+  border-style: solid;
+  border-image: url(dialog.png) 16 round;
+  background: #60473f;
+  width: 944px;
+  height: 188px;
+  color: #fff;
+  font-size: 12px;
+  box-sizing: border-box;
+  position: relative;
+  cursor: url(prohibit.cur) 0 0, default; }
+  div.dialogue.to-continue {
+    cursor: url(next_page.cur) 0 0, default; }
+  div.dialogue .name {
+    text-shadow: 1px 1px 2px #000, -1px -1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000;
+    position: absolute;
+    left: 32px;
+    top: 12px;
+    font-size: 12px; }
+  div.dialogue .content {
+    position: absolute;
+    left: 32px;
+    top: 31px; }
+    div.dialogue .content.only-content {
+      top: 12px;
+      left: 32px; }
+  div.dialogue .button-layer {
+    position: absolute;
+    bottom: 3px;
+    left: 28px; }
+  div.dialogue button {
+    border: none;
+    background-image: url(sprite.png);
+    background-position: 0px -256px;
+    background-size: 512px 278px;
+    color: #fff;
+    font-size: 12px;
+    width: 88px;
+    height: 22px;
+    text-align: center;
+    padding: 0;
+    outline: none;
+    float: left;
+    cursor: url(pointer.cur) 0 0, pointer; }
+  div.dialogue button:hover {
+    background-image: url(sprite.png);
+    background-position: -88px -256px;
+    background-size: 512px 278px; }
+  div.dialogue button:active {
+    background-image: url(sprite.png);
+    background-position: -176px -256px;
+    background-size: 512px 278px; }
+  div.dialogue .avatar {
+    position: absolute;
+    bottom: 120px;
+    left: -60px;
+    z-index: -1; }
+
+div.diary {
+  background-image: url(sprite.png);
+  background-position: 0px 0px;
+  background-size: 512px 278px;
+  width: 512px;
+  height: 256px;
+  color: #fff;
+  font-size: 12px; }
+  div.diary .label-1, div.diary .label-2, div.diary .label-3, div.diary .label-4 {
+    position: absolute;
+    left: 331px;
+    width: 40px;
+    cursor: url(pointer.cur) 0 0, pointer; }
+  div.diary .label-1 {
+    top: 24px; }
+  div.diary .label-2 {
+    top: 57px; }
+  div.diary .label-3 {
+    top: 90px; }
+  div.diary .label-4 {
+    top: 206px; }
+
+div.screen {
+  width: 1280px;
+  margin: 0 auto;
+  height: 100%; }
